@@ -1,35 +1,95 @@
-# Resume-Parser
-INTRODUCTION
-The ResumeRevealer project is an advanced resume analysis tool that supports various document formats, including DOCX. Beyond standard extraction functionalities, it leverages Natural Language Processing (NLP) techniques to intelligently extract relevant information from resumes. The script utilizes predefined lists and regular expressions for pattern matching, enhancing its ability to identify and extract specific details such as skills, education, and contact details. Users can employ the extracted data for further processing or analysis, making the tool versatile for purposes such as recruitment or career counseling.
-PROJEC T OVERVIEW
-ResumeRevealer offers a versatile solution for parsing resumes in different document formats. Key features include:
-Document Format Support: Capable of handling a variety of resume formats, including DOCX,HTML,PDF.
-Information Extraction: Utilizes extraction functions to identify and extract critical details like education, phone numbers, emails, and skills.
-Job Prediction: Employs predictive algorithms to classify and visualize the distribution of job titles within the resumes.
-Sentiment Analysis: Incorporates sentiment analysis to review the tone expressed in the resumes.
-DEPENDENCIES
-Python 3.X
-Libraries used- Imported Libraries:
-docx2txt: Used to extract text from DOCX files.
-os: Standard Python library for interacting with the operating system.
-re: Library for regular expression matching operations in Python.
-nltk: Natural Language Toolkit, a library for natural language processing in Python.
-pandas: Data manipulation and analysis library providing data structures like DataFrame.
-scikit-learn: Machine learning library for data mining and analysis. Used for vectorization (TfidfVectorizer), model selection (train_test_split), and implementing machine learning models (LogisticRegression, SVC).
-matplotlib.pyplot: Plotting library for creating visualizations in Python.
-seaborn: Statistical data visualization library based on Matplotlib.
-pdfminer.high_level: A tool for extracting information from PDF documents. The pdfminer.high_level module is used for high-level PDF text extraction.
-CODE
-The code is accessible in our GitHub repository, with individual scripts for each function. Please ensure you have downloaded all the specified libraries before running the code. Although some functions have not been fully integrated, they operate effectively on their own. Given additional time, we anticipate completing the project in the future to deliver a comprehensive and fully functional solution. 
-USAGE
-Utilize the tool to process resumes in various document formats.
-Extract information such as education, phone numbers, emails, skills, and contact details.
-Predict job titles based on the content.
-Assess the sentiment expressed in the resumes.
-DOCUMENT FORMAT SUPPORT
-HTML: HTML documents are supported, enabling users to parse and extract information from resumes presented in web format.
-DOC and DOCX: Microsoft Word documents in both legacy DOC and modern DOCX formats are seamlessly handled. ResumeRevealer employs robust methods to extract relevant details from these widely used document types.
-PDF: Portable Document Format (PDF) is a common format for resumes. ResumeRevealer leverages the pdfminer library to efficiently extract text from PDF files, ensuring compatibility and accurate information retrieval.
-USP
- ResumeRevealer actively addresses unethical practices, including the use of white text on a white background to manipulate ATS scanners. Leveraging the pdfplumber library, the tool examines font color and size attributes to detect instances of white text against a white background. Upon identification, ResumeRevealer takes action by highlighting or marking the concealed content, ensuring transparency and preventing fraudulent practices during the parsing process. This feature significantly contributes to ethical recruitment practices, enhancing the reliability of the parsed data and maintaining the integrity of the resume analysis.
-ResumeRevealer not only safeguards against unethical practices like white text manipulation using advanced techniques but also provides users with a concise summary of key resume details, including skills, education, and work experience. This dual functionality ensures a transparent and efficient resume evaluation process, empowering recruiters with valuable insights while maintaining ethical standards.
+# ResumeRevealer
+
+ResumeRevealer is an advanced resume analysis tool that supports various document formats, including DOCX, PDF, and HTML. It leverages Natural Language Processing (NLP) techniques and machine learning algorithms to intelligently extract and analyze relevant information from resumes, making it an invaluable tool for recruitment, career counseling, and more.
+
+
+## Features
+
+### 1. Document Format Support
+- DOC and DOCX: Extracts details from Microsoft Word documents, both legacy (DOC) and modern (DOCX) formats.
+- PDF: Utilizes the `pdfminer` library for accurate text extraction.
+- HTML: Processes resumes in web formats with seamless parsing.
+
+### 2. Information Extraction
+- Extracts key details such as:
+  - Education
+  - Contact Information (phone numbers, emails)
+  - Skills
+- Employs predefined lists and regular expressions for precise pattern matching.
+
+### 3. Job Prediction
+- Classifies and visualizes job title distributions within resumes using predictive algorithms.
+
+### 4. Sentiment Analysis
+- Reviews and evaluates the tone expressed in resumes.
+
+### 5. Unethical Practice Detection
+- Detects concealed content, such as white text on a white background, using advanced techniques. 
+- Highlights and flags fraudulent practices to ensure ethical recruitment processes.
+
+---
+
+## Dependencies
+
+Ensure you have the following dependencies installed:
+
+- Python 3.X
+- Libraries:
+  - `docx2txt`: Extract text from DOCX files.
+  - `os`: Standard Python library for system operations.
+  - `re`: Regular expression matching operations.
+  - `nltk`: Natural Language Toolkit for NLP tasks.
+  - `pandas`: Data manipulation and analysis.
+  - `scikit-learn`: For vectorization, model training, and analysis.
+  - `matplotlib.pyplot`: Plotting and visualizations.
+  - `seaborn`: Advanced statistical data visualization.
+  - `pdfminer.high_level`: High-level text extraction from PDFs.
+
+Install the dependencies using `pip`:
+
+```bash
+pip install docx2txt nltk pandas scikit-learn matplotlib seaborn pdfminer.six
+```
+
+---
+
+## Usage
+
+1. Process Resumes: Parse resumes in various formats.
+2. Extract Key Information: Automatically extract education, contact details, and skills.
+3. Predict Job Titles: Classify job roles based on resume content.
+4. Analyze Sentiment: Evaluate the tone of resumes.
+5. Prevent Fraudulent Practices: Identify and flag unethical manipulations.
+
+---
+
+## Unique Selling Point (USP)
+
+ResumeRevealer ensures ethical resume analysis by detecting and flagging practices like:
+- White text manipulation (e.g., white text on a white background).
+  
+It enhances transparency and reliability, empowering recruiters with accurate and insightful resume evaluations.
+
+---
+
+## Project Overview
+
+Although some functions are yet to be fully integrated, the existing features operate independently and effectively. The project aims to deliver a comprehensive solution with future updates.
+
+Explore individual scripts and code in our [GitHub repository](https://github.com/Maitry2402/Resume-Parser) (add your repository link here).
+
+---
+
+## Future Enhancements
+
+- Complete integration of all functionalities.
+- Expand support for additional document formats.
+- Add more advanced NLP and machine learning features.
+
+---
+
+## License
+
+This project is licensed under the [MIT License](#) (or your chosen license). See the LICENSE file for details.
+
+---
