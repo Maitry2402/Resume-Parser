@@ -76,7 +76,7 @@ It enhances transparency and reliability, empowering recruiters with accurate an
 
 Although some functions are yet to be fully integrated, the existing features operate independently and effectively. The project aims to deliver a comprehensive solution with future updates.
 
-Explore individual scripts and code in our [GitHub repository](https://github.com/Maitry2402/Resume-Parser) (add your repository link here).
+Explore individual scripts and code in our [GitHub repository](https://github.com/Maitry2402/Resume-Parser).
 
 ---
 
